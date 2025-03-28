@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+    <h1>Forme</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personalna informacija</legend>
+            <!-- 
+                <label for="userId"></label>
+             -->
+            <input type="text" name="ImeKorisnika" id="userId" placeholder="Name:">
+            <br><br>
+            <!-- <label for="lastNameId">Prezime: </label> -->
+            <input type="text" name="PrezimeKorisnika" id="lastNameId" placeholder="Prezime">
+            <br><br>
+            <label for="cityId">Grad:</label> <br> <input type="text" name="Grad" id="cityId" size="15" maxlength="15">
+            <br><br>
+        </fieldset>
+            <br>
+        <fieldset>
+            <legend>User informacija</legend>
+            <label for="userNameId">Username:</label> <br> <input type="text" name="userId" id="userNameId">
+            <br>
+            <label for="passwordId">Lozinka:</label> <br> <input type="password" name="password" id="passwordId">
+            <br>
+            <label for="userEmailId">Email:</label> <br> <input type="email" name="userEmail" id="userEmailId">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Ostalo:</legend>
+
+            <label for="userNumberId">Unesite kolicinu: </label> <input type="number" id="userNumberId" min="0" max="5"> 
+            <br><br>
+            <label for="carsId">Automobil: </label>
+            <br>
+            <select name="cars" id="carsId">
+                <option value="None" selected disabled>Izaberite...</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Fait">Fiat</option>
+                <option value="Audi">Audi</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Saab">Saab</option>
+            </select>
+    
+    
+            <br><br>
+            <label for="birthdayId">Rodjendan: </label>
+            <input type="date" name="birthday" id="birthdayId">
+            <input type="time" name="vreme">
+            <br><br>
+            <p>
+                Izaberite Pol:
+            </p>
+                
+            <input type="radio" name="gender" id="genderMaleId" checked value="male"> <label for="genderMaleId">Muski</label>  <br>
+            <input type="radio" name="gender" id="genderFemaleId" value="female"> <label for="genderFemaleId">Zenski</label>
+            <br><br>        
+            <fieldset>
+                <legend>
+
+                    Izaberite Vozilo: 
+                </legend>
+                <input type="checkbox" name="vozilo1" id="vozilo1Id" value="bicikli"> <label for="vozilo1Id">Bicikli</label>
+                <br>
+                <input type="checkbox" name="vozilo2" id="vozilo2Id" value="Automobobil"> <label for="vozilo2Id">Automobobil</label>
+
+            </fieldset>
+            <label for="messageId">Ostavi komentar:</label> 
+            <br>
+            <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Kucaj ovde..."></textarea>
+            <br>
+            <input type="submit" value="Posalji Poruku">
+            <input type="reset" value="Resetuj tekst">
+            <input type="file" multiple>
+            <input type="range">
+        </fieldset>
+
+
+
+
+    </form>
+</body>
+</html>

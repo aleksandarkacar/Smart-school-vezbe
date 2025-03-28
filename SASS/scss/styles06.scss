@@ -1,0 +1,25 @@
+$size: 25px;
+
+.wrapper {
+    h2{
+        font-size: $size + 5;
+    }
+
+    h3 {
+        font-size: $size - 5px;
+    }
+
+    .para1 {
+        font-size: $size * 1.5;
+    }
+
+    .para2 {
+        //font-size: $size /1.5;
+        // font-size: 5px + 6px * 2;  //17px
+        font-size: 5 * (6 + 2) + px; //40px
+    }
+}
+
+/*
+Ovo je viselinijski komentar
+*/

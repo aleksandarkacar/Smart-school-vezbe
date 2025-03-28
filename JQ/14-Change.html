@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add, remove, has, class, toggle</title>
+    <style>
+        .klasa1 {
+            background-color: navy;
+            color: white;
+            width: 200px;
+        }
+        .klasa2 {
+            background-color: red;
+            color: white;
+            width: 200px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#gradovi").change(function(){
+                $("#tekst1").val($(this).val());
+            });
+    });
+
+    </script>
+</head>
+<body>
+    <h1>Change</h1>
+
+<div id="izlaz"></div>
+<form id="form1">
+    <select id="gradovi">
+        <option>Subotica</option>
+        <option>Novi Sad</option>
+        <option>Beograd</option>
+    </select>
+    <br><br>
+    <input type="text" name="" id="tekst1" value="Unesi">
+</form>
+
+</body>
+</html>

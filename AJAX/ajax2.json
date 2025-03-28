@@ -1,0 +1,9 @@
+{
+    "name": "John",
+    "surname": "Doe",
+    "age": 54,
+    "address": {
+        "city": "London",
+        "country": "UK"
+    }
+}

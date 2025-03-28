@@ -1,0 +1,1 @@
+alert("Zdravo! Ovaj browser podrzava JS! 3");

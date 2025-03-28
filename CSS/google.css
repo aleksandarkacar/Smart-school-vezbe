@@ -1,0 +1,45 @@
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    margin-top: 17px;
+    text-align: right;
+}
+
+main{
+    text-align: center;
+    margin-top: 145px;
+}
+
+.navlink{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+}
+
+.link_button{
+    padding: 10px;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+}
+
+.link_button:hover{
+    background-color: darkblue;
+    text-decoration: none;
+}
+
+.search_bar{
+    width: 40%;
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 20px;
+}

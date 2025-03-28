@@ -1,0 +1,24 @@
+@use "variables2" as v;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: v.$color-primary;
+  color: v.$text-color-primary;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  margin-bottom: 3px;
+  h1 {
+    font-size: 40px;
+  }
+  ul {
+    display: flex;
+    li {
+      margin: 10px 20px;
+      padding: 5px;
+      a {
+        text-decoration: none;
+        color: v.$text-color-primary;
+      }
+    }
+  }
+}

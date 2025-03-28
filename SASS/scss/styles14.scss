@@ -1,0 +1,33 @@
+.container {
+  .error {
+    background-color: #ddd;
+    border: 1px solid red;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .custom-error {
+    @extend .error;
+    max-width: 500px;
+    margin: auto;
+    color: blue;
+    background-color: yellow;
+  }
+
+  .button {
+    background-color: purple;
+    padding: 20px;
+    color: #fff;
+    margin: 20px;
+  }
+
+  .base-error {
+    border: 5px solid blue;
+    background-color: lighten($color: purple, $amount: 20);
+  }
+
+  .error-button {
+    @extend .button;
+    @extend .base-error;
+  }
+}

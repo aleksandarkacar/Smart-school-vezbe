@@ -1,0 +1,12 @@
+$size: 15;
+
+.wrapper {
+    .bool{
+        @if($size > 10) {
+            color: red;
+        }
+        @else if($size < 10) {
+            color:blue;
+        }
+    }
+}

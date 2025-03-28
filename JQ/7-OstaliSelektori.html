@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            //Primer 1
+            console.log($("div:contains('moj div')").html());
+
+            // $("tr:even").css("background-color","pink");
+
+            $("#DataTable tr:even").css("background-color","blue");
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Ostali Selektori</h1>
+    
+    <div id="testDiv" title="Div title">Ovo je moj div tekst</div>
+    <div title="Contains table">
+        <table id="DataTable">
+            <tr>
+                <td>Celija 1 Red 2</td>
+                
+            </tr>
+            <tr>
+                <td>Celija 1 Red 2</td>
+            </tr>
+            <tr>
+                <td>Celija 1 Red 3</td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Ugnjezdena tabela sa jednim redom i jednom celijom</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="BlueDiv">
+        <span>Plavi span u divu</span>
+    </div>
+
+    <p>Paragraf sa tekstom</p>
+
+    <span class="RedDiv">Tekst u spanu</span>
+    <div class="RedDiv">
+        <span>Crveni Div</span>
+    </div>
+
+    <p>
+        <img src="NoviSad.jpeg" alt="Novi Sad" style="width: 250px;">
+    </p>
+
+    <form id="form1">
+        <table>
+            <tr>
+                <td>
+                    Ime
+                </td>
+                <td>
+                    <input type="text" id="imeTextBox" value="Pera">
+                </td>
+
+            </tr>
+            <tr>
+                <td>Komentar</td>
+                <td>
+                    <textarea rows="5" cols="60" id="komentarTextBox">Tekst za unos</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="sel1">
+                        <option value="">Novi Sad</option>
+                        <option value="">Subotica</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id="submitButton" value="Unos">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+@mixin first-mixin {
+  background-color: yellow;
+  fontsize: 20px;
+  font-weight: bold;
+  color: red;
+  padding: 20px;
+}
+
+.container {
+  .page-title {
+    @include first-mixin();
+    border: 2px solid green;
+    width: 600px;
+    margin: auto;
+  }
+  .page-content {
+    @include first-mixin();
+  }
+}

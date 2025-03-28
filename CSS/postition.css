@@ -1,0 +1,35 @@
+div{
+    border: 3px solid green;
+}
+.pos-relative{
+    /* position: relative; */
+    left: 30px;
+    /* top: 50px; */
+}
+
+.parent-relative{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.dete-absolute{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 0;
+    right: 0;
+}
+
+.position-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: bisque;
+    width: 200px;
+    height: 500px;
+}
+
+body{
+    padding-right: 250px;
+}

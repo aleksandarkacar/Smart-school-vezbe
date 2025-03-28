@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Jquery - jQueryLOAD</h1>
+    <p id="content">Tekst cemo promenuti preko get metode</p>
+    <input type="button" value="Load HTML" id="loadBtn" />
+    <input type="button" value="Load with Params" id="loadParams" />
+
+    <script>
+      $("#loadBtn").click(() => {
+        // console.log("btn click");
+        // $("#content").load("ajax05-demo.html");
+        //Prikazije se element sa id = demo2
+        $("#content").load("ajax05-demo.html #demo2");
+      });
+
+      $("#loadParams").click(() => {
+        $("#content").load("ajax06-demo.html", (response, status, xhr) => {
+          console.log(response, status, xhr);
+          if (status === "success") {
+            alert("ok!");
+          } else {
+            alert("Error! " + xhr.statusText);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

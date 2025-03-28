@@ -1,0 +1,37 @@
+$nav-primary: #f9ed69;
+$nav-secondary: #333;
+$nav-hover: #0081ff;
+$sign-up-color: #0081ff;
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {   
+    nav{
+        font-size: 18px;
+        display: flex;
+        background-color: $nav-primary;
+        justify-content: space-between;
+        ul {
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            a{
+                color: $nav-secondary;
+            }
+        }
+        a {
+            margin: 10px;
+            padding: 10px 15px;
+            color: $sign-up-color;
+            text-decoration: none;
+            &:hover{
+                color: $nav-hover;
+            }
+        }
+    }
+
+
+}

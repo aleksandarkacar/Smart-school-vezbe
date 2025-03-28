@@ -1,0 +1,9 @@
+@use "variables2" as v;
+.foot {
+  background-color: v.$color-primary;
+  padding: 20px;
+  margin: auto;
+  color: v.$text-color-primary;
+  text-align: center;
+  font-family: sans-serif;
+}

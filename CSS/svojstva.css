@@ -1,0 +1,77 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url("722731.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top; */
+    background: url("722731.png") no-repeat right top fixed gainsboro;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+span{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.drugiPasus{
+    text-indent: 0;
+    text-align: left;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding: 50px;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 5px 50px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.roditeljDiv{
+    background-color: rgba(176, 224, 230, 0.486);
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+.childDiv{
+    width: 50%;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.452);
+}
+
+.border-primer{
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: black; */
+
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

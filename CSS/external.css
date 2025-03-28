@@ -1,0 +1,49 @@
+.bordo{
+    color: brown;
+}
+
+p{
+    color: red!important;
+}
+
+h1,h2{
+    position: relative;
+    background-color:green;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.centar{
+    text-align: center;
+}
+
+body{
+    /* color: red; */
+    text-align: center;
+}
+
+#opis{
+    background-color: lightblue;
+    color: black;
+}
+
+h2.centar{
+    color: blue;
+    animation-name: example;
+    animation-duration: 4s;
+    text-transform: capitalize;
+    
+}
+
+span{
+    color: darkmagenta;
+}
+
+@keyframes example {
+    0%   {background-color:green; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:magenta; left:0px; top:200px;}
+    100% {background-color:green; left:0px; top:0px;}
+  }

@@ -1,0 +1,6 @@
+Na osnovu slike zadatak2-1.jpg i zadatak2-2.jpg koristeci HTML 
+napraviti pictures.html stranicu.
+Slike potrebne za izradu zadatka se nalazi u folderu images.
+Kao source za video koristiti sledeci link
+
+https://www.youtube.com/embed/lTB-izxRuNY

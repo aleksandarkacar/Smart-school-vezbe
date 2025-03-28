@@ -1,0 +1,31 @@
+$grad: "Novi Sad";
+$skola: "Smart School";
+$rootPath: "https://www.smartschool.rs/wp-content/uploads/";
+
+
+.wrapper {
+    h1 {
+        text-align: center;
+        &:after {
+            content: " Zivim u #{$grad} i pohadjam skolu #{$skola}";
+        }
+    }
+
+    .img-container1,.img-container2{
+        background-color: #ccc;
+        width: 900px;
+        height: 300px;
+        margin: 20px auto;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        justify-content: center;
+    }
+    .img-container1 {
+        background-image: url("#{$rootPath}2025/02/Baner-zakazani-kursevi-.png")
+    }
+    .img-container2 {
+        background-image: url("#{$rootPath}2024/12/Baner-Kursevi-Power-apps-i-power-Automate-2-.png");
+    }
+}

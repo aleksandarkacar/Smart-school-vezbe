@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            //Dodaje na kraj roditelja (unutar roditelja)
+            // $("#OutputDiv").append("<span style='background-color: green;'>Dodajem tag na kraju prvog diva</span>");
+
+            //Dodaje posle selektovanog elementa
+            $("#OutputDiv").after("<span style='background-color: green;'>Dodajem tag na kraju prvog diva</span>");
+
+            //Dodavanje dogadjaja kroz vanila JS
+            // document.getElementById("dugme").addEventListener("click",() => {
+            //     $("ol").append("<li>Nova stavka</li>")
+            // });
+
+        });
+        function dodaj(){
+            $("ol").append("<li>Nova stavka</li>")
+        }
+    </script>
+</head>
+<body>
+    <h1>Append</h1>
+
+    <div id="OutputDiv">Ovo je prvi div</div>
+    <div id="TestDiv">Ovo je moj div tekst</div>
+    <ol>
+        <li>Stavka 1</li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ol>
+    <input type="button" id="dugme" value="Dodaj" onclick="dodaj();">
+</body>
+</html>

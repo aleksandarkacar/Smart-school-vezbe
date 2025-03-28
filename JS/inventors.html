@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventors</title>
+    <script src="inventors.js"></script>
+    <style>
+        table{
+            width: 500px;
+        }
+
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color: green;
+            color: white;
+        }
+
+        tr:nth-child(odd){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>inventors</h1>
+    <p>1. Proci korz niz objekata i ispisati podatke svih osoba u okviru jedne HTML tabele</p>
+    <p>2. Dohvatiti podatak samo za Galileo Galilei</p>
+    <p>3. Prikazati sve osobe rodjene izmedju 1500 - 1600 godine</p>
+    <p>4. Napraviti pretragu osoba po imenu ili prezimenu - JAVASCRIPT NINJA LEVEL ONLY</p>
+    
+
+
+    <input type="button" value="All inventors" onclick="showAll();">
+    <input type="button" value="Galileo Galilei" onclick="showGalileo()">
+    </br>
+    Born between:
+    <input type="number" id="fromYear_id" placeholder="Start year"> - <input type="number" id="toYear_id" placeholder="End Year">
+    <input type="button" value="Show Data" onclick="showRange()">
+    <br> <br>
+    Search by:
+    <select id="searchType_id">
+        <option value="First Name">First Name</option>
+        <option value="Last Name">Last Name</option>
+    </select>
+    <input type="text" id="search_id">
+    <input type="button" value="Search" onclick="search();">
+
+
+    <hr>
+    <table id="inventors_table_id">
+
+    </table>
+
+</body>
+</html>

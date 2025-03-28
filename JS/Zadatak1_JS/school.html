@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija Polaznika</title>
+    <script src="school.js"></script>
+</head>
+<body>
+    
+    <h1>
+        Registracija Polaznika
+    </h1>
+
+    <label for="ime_polaznika_id">Ime: </label>
+    <input type="text" name="ime_polaznika" id="ime_polaznika_id">
+    <br/>
+    <label for="prezime_polaznika_id">Prezime: </label>
+    <input type="text" name="prezime_polaznika" id="prezime_polaznika_id">
+    <br/>
+    <label for="godine_id">Godine:</label>
+    <input type="number" name="godine" id="godine_id">
+    <br/>
+    <label for="novi_kurs_id">Novi Kurs</label>
+    <!-- <input type="text" name="novi_kurs" id="novi_kurs_id"> -->
+     <select name="novi_kurs" id="novi_kurs_id">
+        <option value="Front End Programiranje">Front end Programiranje</option>
+        <option value="Back End Programiranje">Back end Programiranje</option>
+        <option value="Full Stack Programiranje">Full Stack Programiranje</option>
+        <option value="QA Testiranje">QA Testiranje</option>
+     </select>
+    <br/>
+    <label for="prethodni_kursevi_id">Prethodni Kursevi</label>
+    <input type="text" name="prethodni_kursevi" id="prethodni_kursevi_id">
+    <br/>
+    <br/>
+    <label for="placanje_na_rate_id">Placanje na rate</label>
+    <input type="checkbox" name="placanje_na_rate" id="placanje_na_rate_id">
+    <br/>
+    <br/>
+
+
+    <input type="button" onclick="poruka_alert(get_input_value('ime_polaznika_id'),get_input_value('prezime_polaznika_id'),get_input_value('godine_id'),get_selected_value('novi_kurs_id'),get_checkbox_value('placanje_na_rate_id'),get_input_value('prethodni_kursevi_id'))" value="Submit">
+
+
+
+</body>
+</html>

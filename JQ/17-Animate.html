@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add, remove, has, class, toggle</title>
+    <style>
+      #box {
+        position: absolute;
+        background-color: maroon;
+        color: white;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        //I animacija
+        $("#dugme1").click(() => {
+          $("#box").animate({ left: "150px" }, 2000);
+        });
+
+        //II animacija
+        $("#dugme2").click(() => {
+          $("#box").animate({
+            left: "250px",
+            opacity: 0.5,
+            height: "200px",
+            paddingLeft: "40px" 
+        }, 2000);
+    });
+
+        //III animacija
+        $("#dugme3").click(() => {
+            var kocka = $("#box");
+            kocka.animate({height: "300px"},2000);
+            kocka.animate({width: "300px"},"slow");
+            kocka.animate({fontSize: "3em"},"fast");
+            kocka.animate({height: "100px}"},"slow");
+            kocka.animate({width: "100px"},"fast");
+            kocka.animate({fontSize: "2em"},"slow");
+            kocka.animate({borderRadius: "50%"},"fast");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Animate</h1>
+
+    <input type="button" value="Animacija 1" id="dugme1" />
+    <input type="button" value="Animacija 2" id="dugme2" />
+    <input type="button" value="Animacija 3" id="dugme3" />
+    <div id="box">Text</div>
+  </body>
+</html>

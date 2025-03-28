@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="anketa.js"></script>
+    <title>Anketa</title>
+</head>
+<body>
+    <h1>Anketa</h1>
+    <h3>Koje gradove se posetili</h3>
+    <input type="checkbox" name="checkbox" value="Pariz"> Pariz </br>
+    <input type="checkbox" name="checkbox" value="London"> London </br>
+    <input type="checkbox" name="checkbox" value="Prag"> Prag </br>
+    <input type="checkbox" name="checkbox" value="Bech"> Bech </br>
+    <input type="checkbox" name="checkbox" value="none"> Ni jedan od navedenih</br>
+
+    <h3>Omiljena Boja</h3>
+    <select name="select" id="select_id">
+        <option>Plava</option>
+        <option>Crvena</option>
+        <option>Zelena</option>
+        <option>Zuta</option>
+    </select>
+
+    <h3>Omiljeni ljubimac</h3>
+    <input type="radio" name="radio" value="pas" checked> Pas </br>
+    <input type="radio" name="radio" value="macka"> macka </br>
+    <input type="radio" name="radio" value="papagaj"> papagaj </br>
+    <input type="radio" name="radio" value="ribice"> ribice </br>
+    <br>
+    <input type="button" value="Posalji anketu" onclick="posaljiAnketu();">
+
+</body>
+</html>

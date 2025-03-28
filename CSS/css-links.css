@@ -1,0 +1,43 @@
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:visited{
+    background-color: darkred;
+}
+
+a:hover{
+    background-color: blue;
+    text-decoration: underline;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+a:active{
+    background-color: white;
+    color: white;
+
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:0px;}
+    50%  {background-color:blue; left:0px; top:0px;}
+    75%  {background-color:green; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+i{
+    color: blue;
+}

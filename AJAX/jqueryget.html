@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Jquery - GET</h1>
+    <p id="content">Tekst cemo promenuti preko get metode</p>
+    <input type="button" value="Load JSON" id="btn" />
+    <input type="button" value="Load JSON 2" id="btn2" />
+
+    <script>
+      $("#btn").click(() => {
+        // console.log("btn click");
+        $.get(
+          "ajax.json",
+          (data, status) => {
+            console.log(data, status);
+          },
+          "json"
+        );
+      });
+
+      $("#btn2").click(() => {
+        // console.log("btn click");
+        $.get(
+          "ajax2.json",
+          (data, status) => {
+            console.log(data);
+            $("#content").html(
+              `${data.name} ${data.surname}. ${data.address.city} - ${data.address.country}`
+            );
+          },
+          "json"
+        );
+      });
+    </script>
+  </body>
+</html>

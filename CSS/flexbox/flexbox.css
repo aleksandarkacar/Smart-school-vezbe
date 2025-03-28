@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+.flex_container{
+    background-color: dodgerblue;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+
+}
+
+.flex_container > div {
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 50px;
+}

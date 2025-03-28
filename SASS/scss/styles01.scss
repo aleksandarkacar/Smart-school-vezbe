@@ -1,0 +1,18 @@
+$color: red;
+$baseFontsSize: 18px;
+
+$color-primary: dodgerblue;
+$color-secondary: #f08a5d;
+$color-success: green;
+
+body{
+    color: $color;
+    font-size: $baseFontsSize;
+}
+
+h2{
+    background-color: $color-primary;
+    color: $color-secondary;
+    border: 2px solid $color-success;
+    padding: 20px;
+}

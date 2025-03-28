@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add, remove, has, class, toggle</title>
+    <style>
+        .klasa1 {
+            background-color: navy;
+            color: white;
+            width: 200px;
+        }
+        .klasa2 {
+            background-color: red;
+            color: white;
+            width: 200px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        //     //Add Class
+        //     $("#OutputDiv").addClass("klasa1")
+        
+        // $("#OutputDiv").removeClass("klasa1");
+
+        // if($("OutputDiv").hasClass("klasa1")){
+        //     alert("Klasa postoji");
+        // } else {
+        //     alert("Klasa ne postoji, pa je dodajem")
+        //     $("#OutputDiv").addClass("klasa1")
+        // }
+
+
+    });
+
+    function toggleKlasa(element, nazivKlase){
+        $(element).toggleClass(nazivKlase);
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Class</h1>
+
+    <div id="OutputDiv" class="klasa1"">Ovo je prvi div</div>
+    <div id="TestDiv">Ovo je moj div tekst</div>
+    <ol>
+        <li>Stavka 1</li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ol>
+    <input type="button" id="dugme" value="Dodaj" onfocus="dodaj();" >
+    <input type="text" name="" id="unos" onfocus="toggleKlasa(this,'klasa1');" onblur="toggleKlasa(this,'klasa1')">
+    <input type="text" onfocus="toggleKlasa(this,'klasa2');" onblur="toggleKlasa(this,'klasa2')">
+</body>
+</html>

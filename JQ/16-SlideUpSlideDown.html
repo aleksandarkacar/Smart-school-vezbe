@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add, remove, has, class, toggle</title>
+    <style>
+        #padajuci, #panel{
+            width: 120px;
+            padding: 15px;
+            background-color: #e5eecc;
+            border: 1px solid #c3c3c3;
+            margin-left: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #panel{
+            height: 200px;
+            display: none;
+            line-height: 200px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#padajuci").click(() => {
+                $("#panel").slideToggle(1000);
+            })
+        });
+
+    </script>
+</head>
+<body>
+    <h1>SlideUp SlideDown</h1>
+
+    <div id="padajuci">Klikni me za slide</div>
+    <div id="panel">Smart Skola</div>
+</body>
+</html>

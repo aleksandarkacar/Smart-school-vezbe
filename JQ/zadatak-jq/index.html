@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Praktican deo testa</title>
+  <style>
+    .stilForme {
+      background-color: cadetblue;
+      font-family: cursive;
+      font-size: 0.8em;
+    }
+    .sakrij {
+      display: none;
+    }
+  </style>
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="skriptjq.js"></script>
+</head>
+<body>
+<h1>Praktican deo JQUERY</h1>
+<div id="slika"></div>
+<h3>Unesite podatke za rezervaciju</h3>
+  <form>
+     <label for="ime">Ime</label>
+     <input id="ime" name="ime"> <br>
+      
+     <label for="prezime">Prezime</label>
+     <input id="prezime" name="prezime"><br>
+     
+     <label for="adresa">Adresa</label>
+     <input id="adresa" name="adresa"><br>
+      
+     <label for="telefon">Telefon</label>
+     <input id="telefon" name="telefon"><br>
+      
+     <label for="rezervacija">Rezervacija</label><br>
+     <textarea id="rezervacija" name="rezervacija" cols="50" rows="7"></textarea><br>
+      
+     <input type="button" value="Obrisi">
+     <input type="button" value="Pošalji">
+     <input type="button" value="Sakrij-Prikazi" id="prikazi">
+     <input id="sakrij" type="button" value="Sakrij">
+     <input id="kontakt" type="button" value="Kontakt podaci">
+  </form>
+  <div id="kontaktPodaci" class="sakrij"></div>
+</body>
+</html>

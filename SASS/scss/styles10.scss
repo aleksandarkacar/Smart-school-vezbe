@@ -1,0 +1,45 @@
+.wrapper {
+  a {
+    display: block;
+    font-size: 20px;
+    color: red;
+    background-color: yellow;
+    margin: 20px auto;
+    padding: 20px;
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+      background-color: darkcyan;
+    }
+    &:active {
+      color: darkblue;
+    }
+    &:visited {
+      color: darkmagenta;
+    }
+  }
+
+  .box {
+    p {
+      background-color: dodgerblue;
+      color: white;
+      margin: 20px 0;
+      padding: 10px;
+
+      &:first-child {
+        background-color: red;
+      }
+
+      &:last-child {
+        background-color: green;
+      }
+
+      &:nth-child(3) {
+        background-color: purple;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+alert("Vas browser podrzava JS! 4")

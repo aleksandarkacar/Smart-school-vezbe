@@ -1,0 +1,65 @@
+@use "variables2" as v;
+@mixin text-mixin($font-size, $font-weight: auto) {
+  color: v.$text-color-primary;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  .hero {
+    background-image: url("https://picsum.photos/id/213/4928/3264");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 10px;
+    h2 {
+      @include text-mixin(30px);
+      padding: 10px 1px;
+    }
+    h3 {
+      @include text-mixin(15px);
+    }
+  }
+  .deck {
+    display: flex;
+    flex-direction: column;
+    background-color: v.$color-secondary;
+    padding: 20px 50px;
+    color: v.$text-color-secondairy;
+    .deck-title {
+      margin-bottom: 20px;
+      font-family: sans-serif;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      .card {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        .card-image {
+          background-image: url("https://picsum.photos/id/312/300/300");
+          width: 200px;
+          height: 200px;
+          background-size: cover;
+          border-radius: 50%;
+          overflow: hidden;
+          margin: 20px;
+        }
+      }
+    }
+  }
+}

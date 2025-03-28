@@ -1,0 +1,3 @@
+Na osnovu slike zadatak1.jpg koristeci HTML 
+napraviti index.html stranicu.
+Slika potrebna za izradu zadatka se nalazi u folderu images.

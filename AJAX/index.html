@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+  </head>
+  <body>
+    <h1>AJAX - Asynchonous Javascript and XML</h1>
+    <h2>XMLHttpRequest object</h2>
+
+    <p id="content">Ovaj sadrzaj ce se promeniti</p>
+    <p><input type="button" value="Load txt file" id="btn1" /></p>
+    <p><input type="button" value="Load HTML file" id="btn2" /></p>
+    <p><input type="button" value="Load HTML file" id="btn2" /></p>
+
+    <script>
+      var content = document.getElementById("content");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+
+      btn.onclick = () => {
+        // console.log("onclick event");
+        var xhr = new XMLHttpRequest();
+        console.log(xhr);
+        xhr.onreadystatechange = () => {
+          console.log(xhr);
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            content.innerText = xhr.responseText;
+          } else if (xhr.readyState === 4) {
+            alert("Nesto je poslo po zlu");
+          }
+        };
+
+        xhr.open("GET", "ajax.txt");
+        xhr.send();
+      };
+    </script>
+  </body>
+</html>

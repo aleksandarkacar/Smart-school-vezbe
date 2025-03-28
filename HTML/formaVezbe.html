@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma Vezbe</title>
+</head>
+<body>
+    <form>
+        <label for="imeId">Ime: </label> <input type="ime" id="imeId"> <br><br>
+        <label for="prezimeId">Prezime: </label> <input type="prezime" id="prezimeId"> <br><br>
+        <label for="adresaId">Adresa: </label> <textarea name="Adresa" id="adresaId" cols="40" rows="4"></textarea>
+        <label for="Grad">Grad:</label> <select name="Grad" id="gradId" size="3">
+            <option value="Cacak">Cacak</option>
+            <option value="Beograd">Beograd</option>
+            <option value="Nis" selected>Nis</option>
+            <option value="NoviSad">Novi Sad</option>
+        </select>
+        <br><br>
+        <label for="pol">Pol:</label> 
+        <input type="radio" name="pol" id="muskiId" checked> <label for="muskiId">muski</label>
+        <input type="radio" name="pol" id="zenskiId"> <label for="zenskiId">zenski</label>
+        <br><br>
+        <label for="godineId">Godine: </label> <select name="godine" id="godineId">
+            <option value="0-15">0-15</option>
+            <option value="16-30">16-30</option>
+            <option value="31-45">31-45</option>
+            <option value="preko 45">preko 45</option>
+        </select>
+        <br><br>
+        <input type="checkbox" name="potvrda" id="potvrdaId"> <label for="potvrdaId">Da, zelim da mi posaljete informacije na e-mail adresu</label>
+        <br><br>
+        <input type="submit" value="Potvrdi">
+        <input type="reset" value="Obrisi">
+    </form>
+</body>
+</html>

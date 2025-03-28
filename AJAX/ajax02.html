@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax 2</title>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Ajax Jquery</h1>
+
+    <p id="content">Tekst ce se promeniti na kilik dugmenta</p>
+    <p><input type="button" value="Load txt file" id="btn1" /></p>
+    <p><input type="button" value="Load HTML file" id="btn2" /></p>
+    <p><input type="button" value="Load JSON file" id="btn3" /></p>
+    <p><input type="button" value="Load JSON file" id="btn4" /></p>
+
+    <script>
+      //Txt text
+      $("#btn1").click(() => {
+        // console.log("upali smo u onclick");
+        $.ajax({
+          method: "get",
+          url: "ajax.txt",
+          dataType: "text",
+        }).done((response) => {
+          console.log(response);
+          $("#content").html(response);
+        });
+      });
+
+      //HTML file
+
+      $("#btn2").click(() => {
+        $.ajax({
+          method: "GET",
+          url: "ajax.html",
+          datatype: "html",
+        }).done((data) => {
+          console.log(data);
+          $("#content").html(data);
+        });
+      });
+
+      //Json file
+
+      $("#btn3").click(() => {
+        $.ajax({
+          method: "GET",
+          url: "ajax.json",
+          datatype: "json",
+        }).done((data) => {
+          console.log(data);
+          $("#content").html(
+            `Ime: ${data.ime}, Prezime: ${data.prezime}, Godina Rodjenja: ${data.godinaRodjenja}`
+          );
+        });
+      });
+
+      $("#btn4").click(() => {
+        $.ajax({
+          method: "GET",
+          url: "ajax2.json",
+          datatype: "json",
+        })
+          .done((data) => {
+            // console.log(data);
+            $("#content").html(
+              `Ime: ${data.name}, Prezime: ${data.surname}, Godina Rodjenja: ${data.age} Address: ${data.address.city} - ${data.address.country}`
+            );
+            for (let x in data) {
+              console.log(data[x]);
+            }
+          })
+          .fail(() => {
+            console.log("Error");
+          });
+      });
+    </script>
+  </body>
+</html>

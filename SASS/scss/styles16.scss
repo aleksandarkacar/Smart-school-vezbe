@@ -1,0 +1,19 @@
+@mixin custom-border($color: green, $border-width: 1px) {
+  border: $border-width solid $color;
+  width: 400px;
+  margin: auto;
+}
+
+.container {
+  .content_1 {
+    @include custom-border(red, 2px);
+  }
+
+  .content_2 {
+    @include custom-border(blue, 1vh);
+  }
+
+  .content_3 {
+    @include custom-border();
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Jquery - getJSON</h1>
+    <p id="content">Tekst cemo promenuti preko get metode</p>
+    <input type="button" value="Load JSON 2" id="btn" />
+    <p><input type="text" id="input1" value="" /></p>
+    <p><input type="text" id="input2" value="" /></p>
+    <p><input type="text" id="input3" value="" /></p>
+
+    <script>
+      $("#btn").click(() => {
+        // console.log("btn click");
+        $.getJSON("ajax.json", (data, status) => {
+          console.log(data);
+          $("#input1").val(data.ime);
+          $("#input2").val(data.prezime);
+          $("#input3").val(data.godinaRodjenja);
+        });
+      });
+    </script>
+  </body>
+</html>

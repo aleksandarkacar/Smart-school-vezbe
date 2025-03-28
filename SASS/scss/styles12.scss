@@ -1,0 +1,29 @@
+@use "variables";
+
+.container {
+  .alert {
+    border-radius: 4px;
+    border: solid 1px;
+    border-left-width: 7px;
+    //solid 1px 1px 1px 7px
+    padding: 15px;
+    font-size: 20px;
+    margin: 20px;
+  }
+  .alert-success {
+    background-color: variables.$alert-success-bg;
+    border-color: variables.$alert-success-border;
+  }
+  .alert-danger {
+    background-color: variables.$alert-danger-bg;
+    border-color: variables.$alert-danger-border;
+  }
+  .alert-warning {
+    background-color: variables.$alert-warning-bg;
+    border-color: variables.$alert-warning-border;
+  }
+  .alert-info {
+    background-color: variables.$alert-info-bg;
+    border-color: variables.$alert-info-border;
+  }
+}
