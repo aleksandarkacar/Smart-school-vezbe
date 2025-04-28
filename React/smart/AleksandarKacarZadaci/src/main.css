@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+/* 
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.custom-table th {
+    background-color: mediumseagreen;
+    color: white;
+    font-size: 20px;
+}
+.custom-table tr:nth-child(even) {
+    background-color: #ddd;
+}
+.title{
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-heading {
+    padding: 30px;
+    font-size: 22px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.active {
+    background-color: cornflowerblue;
+    color: #fff;
+    border: 2px solid red;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-math {
+    background-color: rgb(211, 0, 0);
+    color: white;
+    padding: 10px 40px;
+    margin: 10px;
+    width: 200px;
+    font-size: larger;
+    cursor: pointer;
+
+    &:hover{
+        background-color: red;
+    }
+
+    &:disabled {
+    background-color: gray;
+    cursor: not-allowed
+    }
+} */
+
+.user-showcase-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+
+    .user-showcase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .user-showcase-card{
+        display: flex;
+        padding: 30px;
+        margin: 30px;
+        min-width: 160px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: white;
+        border-radius: 30px;
+        h3{
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.adder-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background-color: #2D2D30;
+    font-family: sans-serif;
+
+    input {
+        margin: 5px;
+    }
+
+    h2 {
+        color: dodgerblue
+    }
+    .adder {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+}
